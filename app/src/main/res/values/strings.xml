@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BlueMemo</string>
+    <string name="title_activity_app_nav_host">AppNavHost</string>
+    <string name="reminder_title">Reminder</string>
+    <string name="back_button_text">Volver</string>
+    <string name="settings_tilte">Settings</string>
+    <string name="main_screen_title">Pantalla principal</string>
+    <string name="go_to_reminder_text">Ir a Reminder</string>
+    <string name="go_to_settings_text">Ir a Settings</string>
+</resources>
