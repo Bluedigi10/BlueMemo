@@ -1,4 +1,4 @@
-package com.bluedigi.bluememo.navigation
+package com.bluedigi.bluememo.app.navigation
 
 sealed class AppDestinations(val route: String) {
     data object Home : AppDestinations("home")

@@ -1,4 +1,4 @@
-package com.bluedigi.bluememo.navigation
+package com.bluedigi.bluememo.app.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
