@@ -21,10 +21,10 @@ class InMemoryReminderRepository : ReminderRepository {
         }
     }
 
-    override suspend fun completeReminder(rememberId: String) {
+    override suspend fun completeReminder(reminderId: String) {
         reminders.update { currentList ->
             currentList.map { reminder ->
-                if (reminder.id == rememberId) {
+                if (reminder.id == reminderId) {
                     reminder.copy(status = ReminderStatus.COMPLETED)
                 } else {
                     reminder

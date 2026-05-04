@@ -7,7 +7,7 @@
     <string name="home_empty_state">Aqui vivira el resumen de tareas y recordatorios cuando activemos el CRUD.</string>
     <string name="reminder_placeholder">Base preparada para alta y edicion de recordatorios.</string>
     <string name="settings_placeholder">Preferencias generales listas para conectarse a almacenamiento local.</string>
-    <string name="go_to_reminder_text">Nuevo recordatorio</string>
+    <string name="go_to_reminder_text">Lista de recordatorios</string>
     <string name="go_to_settings_text">Ajustes</string>
     <string name="reminder_list_title">Mis pendientes</string>
     <string name="new_reminder_text">Crear recordatorio</string>
