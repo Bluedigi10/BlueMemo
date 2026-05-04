@@ -9,4 +9,14 @@
     <string name="settings_placeholder">Preferencias generales listas para conectarse a almacenamiento local.</string>
     <string name="go_to_reminder_text">Nuevo recordatorio</string>
     <string name="go_to_settings_text">Ajustes</string>
+    <string name="reminder_list_title">Mis pendientes</string>
+    <string name="new_reminder_text">Crear recordatorio</string>
+    <string name="empty_reminders">Aún no tienes pendientes</string>
+    <string name="frequency_detail_text">Frecuencia: %1$s</string>
+    <string name="status_detail_text">Estado: %1$s</string>
+    <string name="create_reminder_text">Crear recordatorio</string>
+    <string name="title_text">Título</string>
+    <string name="description_text">Descripción</string>
+    <string name="frequency_text">Frecuencia</string>
+    <string name="save_text">Guardar</string>
 </resources>

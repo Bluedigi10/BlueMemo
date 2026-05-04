@@ -1,7 +1,5 @@
 package com.bluedigi.bluememo.data.repository
 
-import com.bluedigi.bluememo.app.navigation.AppDestinations
-import com.bluedigi.bluememo.data.local.ReminderLocalDataSource
 import com.bluedigi.bluememo.domain.model.Reminder
 import com.bluedigi.bluememo.domain.model.ReminderStatus
 import com.bluedigi.bluememo.domain.repository.ReminderRepository
@@ -23,7 +21,7 @@ class InMemoryReminderRepository : ReminderRepository {
         }
     }
 
-    override suspend fun completeReminder(rememberId: Long) {
+    override suspend fun completeReminder(rememberId: String) {
         reminders.update { currentList ->
             currentList.map { reminder ->
                 if (reminder.id == rememberId) {

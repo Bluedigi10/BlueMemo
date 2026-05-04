@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 interface ReminderRepository {
     fun getReminders(): Flow<List<Reminder>>
     suspend fun createReminder(reminder: Reminder)
-    suspend fun completeReminder(rememberId: Long)
+    suspend fun completeReminder(rememberId: String)
 }
