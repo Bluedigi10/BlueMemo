@@ -19,4 +19,11 @@
     <string name="description_text">Descripción</string>
     <string name="frequency_text">Frecuencia</string>
     <string name="save_text">Guardar</string>
+    <string name="status_active">Activo</string>
+    <string name="status_completed">Completado</string>
+    <string name="status_overdue">Vencido</string>
+    <string name="frequency_unique">Único</string>
+    <string name="frequency_daily">Diario</string>
+    <string name="frequency_weekly">Semanal</string>
+    <string name="frequency_monthly">Mensual</string>
 </resources>

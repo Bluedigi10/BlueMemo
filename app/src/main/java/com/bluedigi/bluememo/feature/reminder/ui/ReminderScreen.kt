@@ -3,15 +3,14 @@ package com.bluedigi.bluememo.feature.reminder.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -48,10 +47,13 @@ fun ReminderScreen(
                 text = stringResource(R.string.empty_reminders),
                 modifier = Modifier.padding(top = 24.dp)
             )
+            Spacer(modifier = Modifier.weight(1f))
         } else {
             LazyColumn(
-                modifier = Modifier.padding(top = 16.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterVertically),
+                modifier = Modifier
+                    .padding(top = 16.dp)
+                    .weight(1f),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
                 contentPadding = PaddingValues(bottom = 24.dp)
             ) {
                 items(uiState.reminders) { reminder ->
@@ -70,7 +72,6 @@ fun ReminderScreen(
             modifier = Modifier
                 .padding(top = 8.dp)
                 .fillMaxWidth()
-                .widthIn(max = 320.dp)
         )
     }
 }

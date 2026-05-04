@@ -1,7 +1,7 @@
 package com.bluedigi.bluememo.domain.model
 
 enum class ReminderFrequency {
-    UNIQUE,
+    ONCE,
     DAILY,
     WEEKLY,
     MONTHLY

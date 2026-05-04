@@ -14,6 +14,8 @@ import androidx.compose.ui.unit.dp
 import com.bluedigi.bluememo.R
 import com.bluedigi.bluememo.domain.model.Reminder
 import com.bluedigi.bluememo.domain.model.ReminderStatus
+import com.bluedigi.bluememo.feature.reminder.ui.mapper.mapFrequencyToStringRes
+import com.bluedigi.bluememo.feature.reminder.ui.mapper.mapStatusToStringRes
 
 @Composable
 fun ReminderItem(
@@ -49,12 +51,16 @@ fun ReminderItem(
                     )
                 }
 
-                Text(
-                    text = stringResource(R.string.frequency_detail_text, reminder.frequency)
-                )
+                val frequencyString = stringResource(id = mapFrequencyToStringRes(reminder.frequency))
 
                 Text(
-                    text = stringResource(R.string.status_detail_text, reminder.status)
+                    text = stringResource(R.string.frequency_detail_text, frequencyString)
+                )
+
+                val statusString = stringResource(id = mapStatusToStringRes(reminder.status))
+
+                Text(
+                    text = stringResource(R.string.status_detail_text, statusString)
                 )
             }
         }

@@ -22,6 +22,7 @@ import com.bluedigi.bluememo.R
 import com.bluedigi.bluememo.core.designsystem.component.BlueMemoPrimaryButton
 import com.bluedigi.bluememo.domain.model.ReminderFrequency
 import com.bluedigi.bluememo.feature.reminder.presentation.CreateReminderUiState
+import com.bluedigi.bluememo.feature.reminder.ui.mapper.mapFrequencyToStringRes
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -71,7 +72,7 @@ fun CreateReminderScreen(
             modifier = Modifier.padding(top = 12.dp)
         ) {
             OutlinedTextField(
-                value = uiState.frequency.name,
+                value = stringResource(id = mapFrequencyToStringRes(uiState.frequency)),
                 onValueChange = {},
                 readOnly = true,
                 label = { Text(stringResource(R.string.frequency_text))},
@@ -90,7 +91,7 @@ fun CreateReminderScreen(
             ) {
                 ReminderFrequency.entries.forEach { frequency ->
                     DropdownMenuItem(
-                        text = { Text(frequency.name)},
+                        text = { Text(stringResource(id = mapFrequencyToStringRes(frequency)))},
                         onClick = {
                             onFrequencyChange(frequency)
                             expanded = false
