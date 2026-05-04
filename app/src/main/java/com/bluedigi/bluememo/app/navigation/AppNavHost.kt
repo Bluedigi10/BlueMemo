@@ -58,10 +58,10 @@ fun AppHostNav(
         }
 
         composable(AppDestinations.CreateReminder.route) {
-            val createSate by reminderViewModel.createState.collectAsState()
+            val createState by reminderViewModel.createState.collectAsState()
 
             CreateReminderScreen(
-                uiState = createSate,
+                uiState = createState,
                 onTitleChange = reminderViewModel::onTitleChange,
                 onDescriptionChange = reminderViewModel::onDescriptionChange,
                 onFrequencyChange = reminderViewModel::onFrequencyChange,
