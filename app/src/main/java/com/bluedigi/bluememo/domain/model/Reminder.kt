@@ -1,8 +1,10 @@
 package com.bluedigi.bluememo.domain.model
 
 data class Reminder(
-    val id: Long,
+    val id: String,
     val title: String,
     val description: String? = null,
-    val completed: Boolean = false
+    val frequency: ReminderFrequency,
+    val status: ReminderStatus,
+    val createdAtMillis: Long
 )

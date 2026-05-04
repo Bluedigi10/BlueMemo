@@ -9,10 +9,14 @@ import com.bluedigi.bluememo.core.designsystem.theme.BlueMemoTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val appContainer = (application as
+                BlueMemoApplication).appContainer
         enableEdgeToEdge()
         setContent {
             BlueMemoTheme {
-                BlueMemoApp()
+                BlueMemoApp(
+                    appContainer = appContainer
+                )
             }
         }
     }
